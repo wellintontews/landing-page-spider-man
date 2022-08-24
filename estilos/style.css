@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imgs/Design\ sem\ nome.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-main {
+  width: 1250px;
+  height: 70vh;
+  background-color: #0d1627;
+  position: relative;
+}
+/*Começo do HEADER */
+
+.container-header {
+  padding: 10px 30px;
+  max-width: 100%;
+  height: 100px;
+  background-color: #0d1627;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  margin-top: 15px;
+  width: 170px;
+}
+.patrocinadores {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.psimg2 {
+  width: 90px;
+  height: 28px;
+}
+.psimg {
+  width: 47px;
+  height: 47px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #c61818;
+}
+
+nav a:hover {
+  color: red;
+}
+
+/*Começo do MAIN */
+
+main {
+  width: 100%;
+  height: calc(100% - 100px);
+  position: relative;
+}
+
+.aranha img {
+  position: absolute;
+  top: 65px;
+  left: 75px;
+  opacity: 0.5;
+}
+
+.spider-main img {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  height: 700px;
+}
+
+.text {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.text h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.text p {
+  color: #fff;
+  text-align: center;
+  line-height: 22px;
+  font-weight: 400px;
+  letter-spacing: 1px;
+}
+
+.btn1 {
+  cursor: pointer;
+  position: absolute;
+  left: 45px;
+  top: 225px;
+  width: 150px;
+  height: 45px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #e71818;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px #9e0303;
+  font-weight: 400px;
+}
+.btn2 {
+  cursor: pointer;
+  position: absolute;
+  left: 250px;
+  top: 225px;
+  width: 180px;
+  height: 45px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #e71818;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px #9e0303;
+  font-weight: 400px;
+}
+
+button:hover {
+  box-shadow: 0px 0px 30px red;
+  color: #0d1627c4;
+}
+
+/*Comeco do final */
+
+.contant-grup-text {
+  display: flex;
+  gap: 50px;
+  position: absolute;
+  bottom: 15px;
+  left: 145px;
+}
+
+.text-art {
+  max-width: 180px;
+  color: #fff;
+  text-align: center;
+}
+.text-art h4 {
+  margin-bottom: 5px;
+}
+
+.text-art p {
+  font-size: 13px;
+}
+
+@media (max-width: 1440px) {
+  .aranha img {
+    top: 55px;
+    left: 95px;
+    height: 500px;
+  }
+
+  .spider-main img {
+    height: 655px;
+  }
+
+  .text {
+    left: 95px;
+    top: 50px;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .text h1 {
+    font-size: 50px;
+  }
+  .text p {
+    line-height: 18px;
+    font-weight: 400px;
+  }
+
+  .btn1 {
+    left: 15px;
+    top: 215px;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .btn2 {
+    left: 190px;
+    top: 215px;
+    width: 180px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .contant-grup-text {
+    gap: 50px;
+    bottom: 15px;
+    left: 105px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-main {
+    width: 760px;
+    height: 70vh;
+  }
+  main {
+    position: relative;
+  }
+
+  .container-header {
+    padding: 10px 30px;
+    max-width: 100%;
+    height: 100px;
+    background-color: #0d1627;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    margin-top: 15px;
+    width: 170px;
+  }
+  .patrocinadores {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .psimg2 {
+    width: 80px;
+    height: 25px;
+  }
+  .psimg {
+    width: 37px;
+    height: 37px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .aranha img {
+    top: 105px;
+    left: 15px;
+    height: 450px;
+  }
+
+  .spider-main img {
+    position: absolute;
+    right: 0px;
+    top: -40px;
+    height: 450px;
+  }
+
+  .text {
+    left: 5px;
+    top: 100px;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .text h1 {
+    font-size: 40px;
+  }
+  .text p {
+    line-height: 18px;
+    font-weight: 400px;
+    font-size: 13px;
+  }
+
+  .btn1 {
+    left: 35px;
+    top: 190px;
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+  }
+  .btn2 {
+    left: 180px;
+    top: 190px;
+    width: 150px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .contant-grup-text {
+    gap: 40px;
+    bottom: 10px;
+    left: 65px;
+  }
+}
+
+@media (max-width: 375px) {
+  .patrocinadores {
+    display: none;
+  }
+  .container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-main {
+    width: 370px;
+    height: 90vh;
+  }
+  main {
+    position: relative;
+  }
+
+  .aranha img {
+    top: 105px;
+    left: 35px;
+    height: 400px;
+  }
+
+  .spider-main img {
+    position: absolute;
+    right: 0px;
+    top: 340px;
+    height: 400px;
+  }
+
+  .text {
+    left: 18px;
+    top: 90px;
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  .btn1 {
+    left: 10px;
+    top: 200px;
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+  }
+  .btn2 {
+    left: 180px;
+    top: 200px;
+    width: 150px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .contant-grup-text {
+    display: none;
+  }
+}
